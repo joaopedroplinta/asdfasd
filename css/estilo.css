@@ -1,0 +1,255 @@
+/* Geral*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+    
+/* Variaveis */
+:root {
+    --main-color: #5e1db8;
+    --main-text-color: #FFF;
+    --border-color: #999;
+    --bio-bg-color: #212932;
+    --bio-border-color: #333b44;
+    --about-bg-color: #0b0f14;
+}
+    
+/* Geral */
+.destaque {
+    color: var(--main-color)
+}
+    
+/* Containers */
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text-color);
+}
+    
+#bio-container {
+    flex: 1 1 0 auto;
+    width: 19%;
+    background-color: var(--bio-bg-color);
+    text-align: center;
+    padding: 30px 12px;
+    border-right: 5px solid var(--bio-border-color);
+}
+    
+#sobre-container {
+    flex: 1 1 0 80%;
+    width: 81%;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+}
+    
+/* Bio container*/
+#bio-container h2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+    
+#bio-container h3 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+    
+#bio-container p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+    
+#bio-container #welcome-text {
+    font-weight: bold;
+}
+    
+#bio-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 45px;
+}
+    
+#redes-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--bio-border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+    
+#redes-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+}
+    
+#redes-container li a {
+    color: var(--main-color);
+    font-size: 30px;
+}
+    
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+    
+#email-container ion-icon,
+#enail-container a {
+    flex: 1 0 1;
+}
+    
+#email-container a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    max-width: 225px;
+}
+    
+#email-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;    
+    }
+    
+/* Sobre o Container*/
+#nome {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+    
+#titulo {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+    
+.descricao{
+    max-width: 75%;
+}
+    
+#btn-projetos {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 30px 0;
+    padding: 15px 10px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+    
+#btn-projetos ion-icon,
+#btn-projetos span {
+    flex: 1 0 1;
+}
+    
+#btn-projetos ion icons {
+    font-size: 100px;
+}
+    
+#btn-projetos:hover {
+    background-color: transparent;
+}
+    
+#secao-habilidades-titulo {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+    
+#habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+    
+.habilidades-box {
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+    
+.habilidades-titulo {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+}
+    
+.habilidades-box i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+    
+#Loading {
+    font-size: 45px;
+    margin-right: 10px;
+}
+    
+#Projetos {
+    font-size: 25px;
+}
+    
+/* Mobile */
+@media(max-width: 576px) {
+/* div Lado esquerdo */
+    #container{
+        flex-direction: column;
+    }
+    
+    #bio-container {
+        width: 100%;
+        max-height: 100%;
+        border-right: none;
+        border-bottom: 10px solid var(--bio-border-color);
+    }
+    
+    #bio-container h2 {
+        display: none;
+    }
+    
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+    /* div Lado direito */
+    #sobre-container {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    #sbore-container .descricao {
+        margin: 10px auto; 
+        max-width: 100%;
+        line-height: 26px;
+    }
+    
+    #btn-projetos {
+        margin: 20px auto;
+    }
+    
+    .habilidades-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .habilidades-box i {
+        font-size: 60px;
+    }
+}
