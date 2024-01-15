@@ -1,6 +1,7 @@
 # Portfólio de João Pedro Plinta
 
 Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre mim, minhas habilidades e projetos.
+https://joaopedroplinta.github.io/
 
 ## Sobre mim
 
